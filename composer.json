@@ -1,5 +1,5 @@
 {
-    "name": "fourkitchens/fourk-gulp",
+    "name": "modulesunraveled/fourk-gulp",
     "description": "Gulp helper for the Fourk Drupal 8 theme base.",
     "type": "root-package",
     "license": "GPL-2.0+",
