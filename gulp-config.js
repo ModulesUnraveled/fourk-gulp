@@ -3,9 +3,9 @@
 (function () {
   'use strict';
 
-  var themeDir = 'themes/fourk';
+  var themeDir = 'themes/contrib/fourk';
   var paths = {
-    js: themeDir + '/js/**/*.js',
+    js: themeDir + '/source/_patterns/00-base/global/*.js',
     styleguide_js: [
       themeDir + '/js/**/*.js',
       themeDir + '/source/_patterns/**/*.js'
@@ -32,7 +32,7 @@
     },
     cssConfig: {
       enabled: true,
-      src: themeDir + '/source/**/*.scss',
+      src: themeDir + '/source/_patterns/**/*.scss',
       dest: themeDir + '/dist/',
       flattenDestOutput: true,
       lint: {
@@ -75,7 +75,7 @@
           prefix: '@mixin sprite-%s',
           render: {
             scss: {
-              dest: '../source/_patterns/01-atoms/04-images/_icon_sprite.scss',
+              dest: '../source/_patterns/01-atoms/04-images/icons/_icon_sprite.scss',
               template: 'gulp-tasks/svg-icons/sprite.scss.handlebars'
             }
           }
@@ -98,7 +98,7 @@
     browserSync: {
       enabled: true,
       domain: '127.0.0.1:8888',
-      startPath: 'pattern-lab/public/',
+      startPath: 'pattern-lab/public/index.html',
       reloadDelay: 50,
       reloadDebounce: 750
     }
